@@ -64,7 +64,7 @@ resource "aws_route" "default-vpc-peer-entry" {
 
 resource "aws_instance" "main" {
   instance_type           = "t3.micro"
-  ami                     = "0f3c7d07486cad139"
+  ami                     = "ami-0f3c7d07486cad139"
   vpc_security_group_ids  = [aws_security_group.allow_tls.id]
   subnet_id               = local.app_subnet_ids[0]
 }
