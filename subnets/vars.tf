@@ -1,2 +1,2 @@
-variable "subnets" {}
+        variable "subnets" {}
 variable "vpc_id" {}
